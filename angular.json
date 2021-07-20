@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jw-pagination": {
+    "jw-pagination-bulma": {
       "projectType": "library",
-      "root": "projects/jw-pagination",
-      "sourceRoot": "projects/jw-pagination/src",
+      "root": "projects/jw-pagination-bulma",
+      "sourceRoot": "projects/jw-pagination-bulma/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/jw-pagination/tsconfig.lib.json",
-            "project": "projects/jw-pagination/ng-package.json"
+            "tsConfig": "projects/jw-pagination-bulma/tsconfig.lib.json",
+            "project": "projects/jw-pagination-bulma/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/jw-pagination/tsconfig.lib.prod.json"
+              "tsConfig": "projects/jw-pagination-bulma/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/jw-pagination/src/test.ts",
-            "tsConfig": "projects/jw-pagination/tsconfig.spec.json",
-            "karmaConfig": "projects/jw-pagination/karma.conf.js"
+            "main": "projects/jw-pagination-bulma/src/test.ts",
+            "tsConfig": "projects/jw-pagination-bulma/tsconfig.spec.json",
+            "karmaConfig": "projects/jw-pagination-bulma/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/jw-pagination/tsconfig.lib.json",
-              "projects/jw-pagination/tsconfig.spec.json"
+              "projects/jw-pagination-bulma/tsconfig.lib.json",
+              "projects/jw-pagination-bulma/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -43,5 +43,5 @@
         }
       }
     }},
-  "defaultProject": "jw-pagination"
+  "defaultProject": "jw-pagination-bulma"
 }
